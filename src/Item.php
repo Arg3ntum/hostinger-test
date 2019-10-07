@@ -37,7 +37,7 @@ class Item
      * @param $sell_in
      * @param $quality
      */
-    function __construct($name, $sell_in, $quality)
+    function __construct($name = null, $sell_in = null, $quality = null)
     {
         $this->name = $name;
         $this->sell_in = $sell_in;
