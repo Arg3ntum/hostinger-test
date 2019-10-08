@@ -87,7 +87,7 @@ class GildedRose
     public function render(): self
     {
         for ($i = 0; $i < $this->days; $i++) {
-            $this->renderedData .= "-------- day $i --------\n";
+            $this->renderedData .= "-------- day " . ($i + 1) . " --------\n";
             $this->renderedData .= "name, sellIn, quality\n";
             foreach ($this->items as $item) {
                 $this->renderedData .= $item . PHP_EOL;
